@@ -1,107 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conserto de Celulares</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIERRY A.D.G. ADVOCACIA</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #000, #1c1c1c);
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0c0c0c;
+      color: #f5f5f5;
     }
-    h1 {
-      color: #00bfff;
-      font-size: 3em;
-      margin-top: 40px;
-      animation: fadeInUp 1s ease-in-out;
+    header {
+      background-color: #000;
+      color: #d4af37;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+    }
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    header p {
+      font-style: italic;
+      color: #f5f5f5;
+      margin-top: 10px;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
-      font-size: 2em;
-      color: #fff;
-      margin: 20px 0 10px;
-      animation: fadeInUp 1s ease-in-out;
+      color: #d4af37;
+      margin-bottom: 15px;
     }
     p {
-      max-width: 800px;
-      margin: 10px auto;
-      font-size: 1.2em;
       line-height: 1.6;
-    }
-    .services {
-      background-color: #111;
-      padding: 30px;
-      margin: 30px auto;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px #00bfff44;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
       font-size: 1.1em;
     }
-    .services li {
-      margin: 10px 0;
-    }
-    .cta-button {
+    .btn-whatsapp {
       display: inline-block;
       margin-top: 30px;
-      padding: 15px 30px;
-      background: #00bfff;
+      padding: 15px 40px;
+      background-color: #d4af37;
       color: #000;
       font-weight: bold;
       font-size: 1.2em;
+      border: none;
+      border-radius: 50px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease, transform 0.3s ease;
-      animation: pulse 2s infinite;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .cta-button:hover {
-      background: #66ccff;
+    .btn-whatsapp:hover {
       transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(212, 175, 55, 0.8);
     }
     footer {
-      margin: 50px 0 20px;
+      background-color: #000;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9em;
-      color: #888;
+      border-top: 1px solid #333;
     }
-    @keyframes fadeInUp {
-      0% {opacity: 0; transform: translateY(20px);}
-      100% {opacity: 1; transform: translateY(0);}
+    .testimonials {
+      background-color: #111;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin-top: 40px;
     }
-    @keyframes pulse {
-      0%, 100% {transform: scale(1);}
-      50% {transform: scale(1.05);}
+    .testimonial {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial span {
+      display: block;
+      margin-top: 5px;
+      font-weight: bold;
+      color: #d4af37;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>PIERRY A.D.G. ADVOCACIA</h1>
+    <p>“Somos a chave de proteção da sua empresa”</p>
+  </header>
 
-  <h1>Assistência Técnica de Celulares</h1>
-  <h2>Conserto rápido, confiável e com garantia!</h2>
-  <p>Especialistas em manutenção de celulares. Atendemos diversas marcas e modelos com agilidade e qualidade.</p>
+  <section>
+    <h2>Sobre Nós</h2>
+    <p>A PIERRY A.D.G. Advocacia nasceu com o propósito de proteger empresas contra riscos jurídicos e patrimoniais. Atuamos de forma preventiva e estratégica para garantir que o seu negócio continue seguro, forte e em crescimento constante.</p>
+  </section>
 
-  <div class="services">
-    <h2>Serviços oferecidos:</h2>
+  <section>
+    <h2>Serviços</h2>
     <ul>
-      <li>Troca de tela quebrada</li>
-      <li>Substituição de bateria</li>
-      <li>Conserto de conector de carga</li>
-      <li>Desbloqueio e atualização de sistema</li>
-      <li>Reparo em câmera, microfone e alto-falante</li>
-      <li>Limpeza interna e diagnóstico completo</li>
+      <li>Assessoria jurídica empresarial</li>
+      <li>Elaboração e revisão de contratos</li>
+      <li>Defesa em processos cíveis, trabalhistas e tributários</li>
+      <li>Consultoria preventiva e compliance corporativo</li>
+      <li>Planejamento jurídico e proteção patrimonial</li>
     </ul>
-  </div>
+    <a class="btn-whatsapp" href="https://wa.me/SEUNUMERO" target="_blank">Fale Conosco</a>
+  </section>
 
-  <a class="cta-button" href="https://wa.me/5511942877993" target="_blank">Fale conosco no WhatsApp</a>
+  <section class="testimonials">
+    <h2>O que nossos clientes dizem</h2>
+
+    <div class="testimonial">
+      <p>"A equipe da Pierry A.D.G. salvou minha empresa de um problema contratual grave. Super recomendo!"</p>
+      <span>– João S., empresário</span>
+    </div>
+
+    <div class="testimonial">
+      <p>"Profissionais extremamente competentes e atenciosos. Sempre prontos para esclarecer nossas dúvidas legais."</p>
+      <span>– Maria F., diretora</span>
+    </div>
+
+    <div class="testimonial">
+      <p>"Senti muita segurança ao contratar os serviços da Pierry A.D.G. Meu negócio está muito mais protegido."</p>
+      <span>– Carlos T., empreendedor</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p>Entre em contato conosco e garanta proteção jurídica completa para sua empresa.</p>
+    <a class="btn-whatsapp" href="https://wa.me/SEUNUMERO" target="_blank">Chame no WhatsApp</a>
+  </section>
 
   <footer>
-    © 2025 – Assistência Técnica Do Marcos
+    &copy; 2025 PIERRY A.D.G. Advocacia. Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
