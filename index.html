@@ -24,7 +24,6 @@
       font-family: 'Montserrat', sans-serif;
       background-color: var(--black);
       color: white;
-      overflow-x: hidden;
     }
 
     header {
@@ -32,26 +31,25 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0.95);
+      padding: 10px 25px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       z-index: 100;
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(212,175,55,0.1);
+      border-bottom: 1px solid rgba(212,175,55,0.15);
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
       color: var(--gold);
-      font-size: 20px;
+      font-size: 18px;
     }
 
     nav a {
       color: var(--gray);
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 18px;
       transition: 0.3s;
       font-weight: 500;
     }
@@ -61,7 +59,7 @@
     }
 
     section {
-      padding: 100px 30px 60px;
+      padding: 90px 25px 40px;
       max-width: 1000px;
       margin: auto;
     }
@@ -79,17 +77,17 @@
 
     .hero h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 38px;
+      font-size: 36px;
       color: var(--gold);
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .hero p {
       color: #ddd;
-      font-size: 17px;
-      max-width: 700px;
-      line-height: 1.6;
-      margin-bottom: 25px;
+      font-size: 16px;
+      max-width: 650px;
+      line-height: 1.5;
+      margin-bottom: 20px;
     }
 
     .btn {
@@ -110,14 +108,14 @@
     h3.section-title {
       font-family: 'Playfair Display', serif;
       color: var(--gold);
-      font-size: 26px;
-      margin-bottom: 15px;
+      font-size: 24px;
+      margin-bottom: 10px;
       text-align: center;
     }
 
     .about p {
       color: var(--gray);
-      line-height: 1.7;
+      line-height: 1.6;
       text-align: center;
       max-width: 800px;
       margin: auto;
@@ -125,28 +123,28 @@
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
     }
 
     .service-card {
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255,255,255,0.1);
       border-radius: 10px;
-      padding: 22px;
+      padding: 20px;
       transition: 0.3s;
     }
 
     .service-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-3px);
       border-color: var(--gold);
       box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
 
     .service-card h4 {
       color: var(--gold);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .service-card p {
@@ -167,7 +165,7 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 16px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       transition: 0.3s;
     }
 
@@ -176,11 +174,11 @@
     }
 
     .contact form {
-      max-width: 550px;
+      max-width: 500px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     input, textarea {
@@ -190,7 +188,7 @@
       outline: none;
       background: rgba(255,255,255,0.05);
       color: white;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     textarea {
@@ -200,25 +198,13 @@
 
     footer {
       background: #0a0a0a;
-      padding: 25px;
+      padding: 20px;
       text-align: center;
       color: var(--gray);
       border-top: 1px solid rgba(255,255,255,0.05);
-      font-size: 14px;
+      font-size: 13px;
     }
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav {
-        margin-top: 10px;
-      }
-      .hero h2 {
-        font-size: 30px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -233,52 +219,50 @@
   </header>
 
   <section class="hero">
-    <h2>Somos a chave de proteção da sua empresa</h2>
-    <p>Atuamos de forma preventiva e estratégica para garantir que o seu negócio continue seguro, forte e em constante crescimento.</p>
+    <h2>Protegemos o seu negócio com excelência jurídica</h2>
+    <p>Atuação estratégica e preventiva para garantir segurança e crescimento sustentável à sua empresa.</p>
     <a href="#contato" class="btn">Fale Conosco</a>
   </section>
 
   <section id="sobre" class="about">
     <h3 class="section-title">Sobre Nós</h3>
-    <p>A PIERRY A.D.G. Advocacia nasceu com o propósito de proteger empresas contra riscos jurídicos e patrimoniais. Nosso trabalho combina experiência, estratégia e comprometimento para oferecer soluções personalizadas, garantindo segurança jurídica e crescimento sustentável aos nossos clientes.</p>
+    <p>PIERRY A.D.G. Advocacia é especializada em direito empresarial, oferecendo soluções jurídicas sob medida para empresas que buscam proteção, eficiência e crescimento.</p>
   </section>
 
   <section id="servicos">
     <h3 class="section-title">Serviços</h3>
     <div class="services">
       <div class="service-card">
-        <h4>Assessoria Jurídica Empresarial</h4>
-        <p>Suporte jurídico contínuo para empresas, auxiliando na tomada de decisões e prevenção de litígios.</p>
+        <h4>Consultoria Empresarial</h4>
+        <p>Orientação jurídica contínua para gestão segura e eficiente da sua empresa.</p>
       </div>
       <div class="service-card">
-        <h4>Elaboração e Revisão de Contratos</h4>
-        <p>Contratos empresariais sólidos e bem estruturados, alinhados aos seus objetivos e segurança jurídica.</p>
+        <h4>Contratos</h4>
+        <p>Elaboração e revisão de contratos empresariais e comerciais.</p>
       </div>
       <div class="service-card">
-        <h4>Defesa em Processos</h4>
-        <p>Atuação em processos cíveis, trabalhistas e tributários, sempre com foco em minimizar riscos e proteger o patrimônio.</p>
+        <h4>Defesa Judicial</h4>
+        <p>Atuação em processos cíveis, trabalhistas e tributários.</p>
       </div>
       <div class="service-card">
-        <h4>Consultoria Preventiva e Compliance</h4>
-        <p>Mapeamento de riscos e implementação de boas práticas de governança corporativa.</p>
-      </div>
-      <div class="service-card">
-        <h4>Planejamento Jurídico e Patrimonial</h4>
-        <p>Estratégias jurídicas para proteger seus bens e garantir o crescimento sustentável do seu negócio.</p>
+        <h4>Compliance e Governança</h4>
+        <p>Implantação de boas práticas e prevenção de riscos jurídicos.</p>
       </div>
     </div>
   </section>
 
   <section id="contato" class="contact">
     <h3 class="section-title">Fale pelo WhatsApp</h3>
-    <a class="whatsapp-link" href="https://wa.me/5511932445709" target="_blank">📱 Conversar pelo WhatsApp</a>
-    <p>Ou envie uma mensagem diretamente para o nosso e-mail:</p>
 
-    <form action="mailto:joaopierry67@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Seu nome" required>
+    <a class="whatsapp-link" href="https://wa.me/5511932445709" target="_blank">📱 Conversar pelo WhatsApp</a>
+
+    <p>Ou envie uma mensagem para o nosso e-mail:</p>
+
+    <form action="https://formspree.io/f/mnqedzpj" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
       <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="tel" name="phone" placeholder="Seu telefone" required>
-      <textarea name="message" placeholder="Sua mensagem"></textarea>
+      <input type="tel" name="telefone" placeholder="Seu telefone" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
       <button type="submit" class="btn">Enviar Mensagem</button>
     </form>
   </section>
