@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PIERRY A.D.G. Advocacia</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.D.G de Advocacia | Proteção Empresarial</title>
   <style>
-    :root {
-      --gold: #d4af37;
-      --black: #0b0b0b;
-      --gray: #bfbfbf;
-    }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--black);
-      color: white;
+      background-color: #0a0a0a;
+      color: #f2f2f2;
+      line-height: 1.5;
     }
 
     header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.95);
-      padding: 10px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-      border-bottom: 1px solid rgba(212,175,55,0.15);
+      background: linear-gradient(90deg, #000, #1a1a1a);
+      color: #d4af37;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 3px solid #d4af37;
     }
 
     header h1 {
-      font-family: 'Playfair Display', serif;
-      color: var(--gold);
-      font-size: 18px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
     }
 
-    nav a {
-      color: var(--gray);
-      text-decoration: none;
-      margin-left: 18px;
-      transition: 0.3s;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--gold);
-    }
-
-    section {
-      padding: 90px 25px 40px;
-      max-width: 1000px;
-      margin: auto;
+    header p {
+      font-size: 1rem;
+      color: #f2f2f2;
     }
 
     .hero {
@@ -69,207 +41,117 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      min-height: 90vh;
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-        url('https://images.unsplash.com/photo-1593113598332-cd15b28c1a98?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      padding: 3rem 1rem;
+      background: radial-gradient(circle, #111 0%, #000 100%);
+    }
+
+    .hero img {
+      width: 100px;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 10px #d4af37);
     }
 
     .hero h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      color: var(--gold);
-      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #d4af37;
+      margin-bottom: 0.5rem;
     }
 
     .hero p {
-      color: #ddd;
-      font-size: 16px;
-      max-width: 650px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      background: var(--gold);
-      color: black;
-      padding: 12px 25px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: 0.3s;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: #f5d76e;
-    }
-
-    h3.section-title {
-      font-family: 'Playfair Display', serif;
-      color: var(--gold);
-      font-size: 24px;
-      margin-bottom: 10px;
+      max-width: 700px;
       text-align: center;
+      color: #ccc;
+      margin-bottom: 2rem;
     }
 
-    .about p {
-      color: var(--gray);
-      line-height: 1.6;
+    section {
+      padding: 2rem 1rem;
+      background-color: #111;
+      border-top: 1px solid #333;
+    }
+
+    section h3 {
+      color: #d4af37;
+      margin-bottom: 1rem;
       text-align: center;
+      font-size: 1.5rem;
+    }
+
+    section p {
       max-width: 800px;
-      margin: auto;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 15px;
-      margin-top: 25px;
-    }
-
-    .service-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 10px;
-      padding: 20px;
-      transition: 0.3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--gold);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    }
-
-    .service-card h4 {
-      color: var(--gold);
-      margin-bottom: 6px;
-    }
-
-    .service-card p {
-      color: var(--gray);
-      line-height: 1.6;
-    }
-
-    .contact {
+      margin: 0 auto 1rem;
       text-align: center;
+      color: #ddd;
     }
 
-    .contact a.whatsapp-link {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 50px;
+    .button-container {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .whatsapp-btn {
+      background-color: #d4af37;
+      color: #000;
       text-decoration: none;
-      font-weight: 700;
-      font-size: 16px;
-      margin-bottom: 20px;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.1rem;
       transition: 0.3s;
+      box-shadow: 0 0 10px #d4af37;
     }
 
-    .contact a.whatsapp-link:hover {
-      background: #1ebe5a;
-    }
-
-    .contact form {
-      max-width: 500px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    input, textarea {
-      padding: 12px 14px;
-      border-radius: 6px;
-      border: none;
-      outline: none;
-      background: rgba(255,255,255,0.05);
-      color: white;
-      font-size: 15px;
-    }
-
-    textarea {
-      resize: none;
-      height: 120px;
+    .whatsapp-btn:hover {
+      background-color: #b48b2c;
+      box-shadow: 0 0 20px #d4af37;
+      transform: scale(1.05);
     }
 
     footer {
-      background: #0a0a0a;
-      padding: 20px;
+      background: #000;
+      color: #999;
       text-align: center;
-      color: var(--gray);
-      border-top: 1px solid rgba(255,255,255,0.05);
-      font-size: 13px;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
     }
-
   </style>
 </head>
 <body>
-
   <header>
-    <h1>PIERRY A.D.G. ADVOCACIA</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <h1>A.D.G de Advocacia</h1>
+    <p>Especialistas em Proteção Empresarial e Assessoria Jurídica</p>
   </header>
 
   <section class="hero">
-    <h2>Protegemos o seu negócio com excelência jurídica</h2>
-    <p>Atuação estratégica e preventiva para garantir segurança e crescimento sustentável à sua empresa.</p>
-    <a href="#contato" class="btn">Fale Conosco</a>
+    <img src="https://cdn-icons-png.flaticon.com/512/619/619037.png" alt="Chave dourada">
+    <h2>“Somos a chave da proteção da sua empresa”</h2>
+    <p>Na <strong>A.D.G de Advocacia</strong>, oferecemos soluções jurídicas completas para garantir a segurança e estabilidade do seu negócio. Nosso compromisso é proteger o patrimônio da sua empresa com excelência e discrição.</p>
   </section>
 
-  <section id="sobre" class="about">
-    <h3 class="section-title">Sobre Nós</h3>
-    <p>PIERRY A.D.G. Advocacia é especializada em direito empresarial, oferecendo soluções jurídicas sob medida para empresas que buscam proteção, eficiência e crescimento.</p>
+  <section>
+    <h3>🔒 Proteção Empresarial Completa</h3>
+    <p>Consultoria jurídica especializada em prevenção de riscos empresariais, elaboração de contratos sólidos e blindagem patrimonial.</p>
   </section>
 
-  <section id="servicos">
-    <h3 class="section-title">Serviços</h3>
-    <div class="services">
-      <div class="service-card">
-        <h4>Consultoria Empresarial</h4>
-        <p>Orientação jurídica contínua para gestão segura e eficiente da sua empresa.</p>
-      </div>
-      <div class="service-card">
-        <h4>Contratos</h4>
-        <p>Elaboração e revisão de contratos empresariais e comerciais.</p>
-      </div>
-      <div class="service-card">
-        <h4>Defesa Judicial</h4>
-        <p>Atuação em processos cíveis, trabalhistas e tributários.</p>
-      </div>
-      <div class="service-card">
-        <h4>Compliance e Governança</h4>
-        <p>Implantação de boas práticas e prevenção de riscos jurídicos.</p>
-      </div>
-    </div>
+  <section>
+    <h3>⚖️ Assessoria Contínua</h3>
+    <p>Acompanhamos sua empresa em todas as etapas legais, garantindo conformidade com a legislação e segurança em cada decisão estratégica.</p>
   </section>
 
-  <section id="contato" class="contact">
-    <h3 class="section-title">Fale pelo WhatsApp</h3>
-
-    <a class="whatsapp-link" href="https://wa.me/5511932445709" target="_blank">📱 Conversar pelo WhatsApp</a>
-
-    <p>Ou envie uma mensagem para o nosso e-mail:</p>
-
-    <form action="https://formspree.io/f/mnqedzpj" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="tel" name="telefone" placeholder="Seu telefone" required>
-      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-      <button type="submit" class="btn">Enviar Mensagem</button>
-    </form>
+  <section>
+    <h3>🕵️ Auditorias e Defesa Jurídica</h3>
+    <p>Atuamos na defesa preventiva e corretiva de empresas em processos administrativos e judiciais, com discrição e agilidade.</p>
   </section>
+
+  <div class="button-container">
+    <a class="whatsapp-btn" href="https://wa.me/5511932445709?text=ola%20estou%20precisando%20do%20seu%20serviço%20para%20proteção%20da%20minha%20empresa" target="_blank">
+      Fale Conosco no WhatsApp
+    </a>
+  </div>
 
   <footer>
-    © 2025 PIERRY A.D.G. Advocacia — Todos os direitos reservados.
+    © 2025 A.D.G de Advocacia — Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
